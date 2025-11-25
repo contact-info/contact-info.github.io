@@ -12,6 +12,7 @@ const contacts = [
     { name: "Ankit sir", phone: "9351158803" },
     { name: "Mamta ma'am(HR)", phone: "9352755615" },
     { name: "Gurleen ma'am(HR)", phone: "6375896162" },
+    { name: "Guard uncle", phone: "7597477005" },
 
     
 ];
@@ -93,3 +94,4 @@ renderContacts();
 // Attach Save All button event
 
 document.getElementById('save-all-btn').addEventListener('click', saveAllContacts);
+
