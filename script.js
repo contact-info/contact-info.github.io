@@ -14,6 +14,7 @@ const contacts = [
     { name: "Gurleen ma'am(HR)", phone: "6375896162" },
     { name: "Guard uncle", phone: "7597477005" },
     { name: "Rajeev Bhaiya", phone: "9993562334" },
+    { name: "Raju Bhaiya", phone: "7220946350" }
 ];
 
 const contactListElement = document.getElementById('contact-list');
@@ -63,6 +64,7 @@ END:VCARD`;
 
 // Initial render
 renderContacts();
+
 
 
 
