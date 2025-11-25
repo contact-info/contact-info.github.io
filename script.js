@@ -1,9 +1,19 @@
 const contacts = [
-    { name: "John Doe", phone: "+15550101" },
-    { name: "Jane Smith", phone: "+15550102" },
-    { name: "Alice Johnson", phone: "+15550103" },
-    { name: "Bob Williams", phone: "+15550104" },
-    { name: "Charlie Brown", phone: "+15550105" }
+    { name: "Prince sir(Director)", phone: "9261170000" },
+    { name: "Wazid sir(Director)", phone: "8432412345" },
+    { name: "Abhin sir(Director)", phone: "8104133333" },
+    { name: "Adeep sir(Director)", phone: "9887206446" },
+    { name: "Jatin sir(Director)", phone: "7073012345" },
+    { name: "Salman sir (Director)", phone: "8829837777" },
+    { name: "Honey sir", phone: "9929965704" },
+    { name: "Harsh sir", phone: "9079336261" },
+    { name: "Saurabh sir", phone: "9950349049" },
+    { name: "Gagan sir", phone: "7728043136" },
+    { name: "Ankit sir", phone: "9351158803" },
+    { name: "Mamta ma'am(HR)", phone: "9352755615" },
+    { name: "Gurleen ma'am(HR)", phone: "6375896162" },
+
+    
 ];
 
 const contactListElement = document.getElementById('contact-list');
@@ -81,4 +91,5 @@ function saveAllContacts() {
 renderContacts();
 
 // Attach Save All button event
+
 document.getElementById('save-all-btn').addEventListener('click', saveAllContacts);
