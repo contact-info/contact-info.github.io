@@ -13,8 +13,6 @@ const contacts = [
     { name: "Mamta ma'am(HR)", phone: "9352755615" },
     { name: "Gurleen ma'am(HR)", phone: "6375896162" },
     { name: "Guard uncle", phone: "7597477005" },
-
-    
 ];
 
 const contactListElement = document.getElementById('contact-list');
@@ -62,36 +60,8 @@ END:VCARD`;
     URL.revokeObjectURL(url);
 }
 
-// NEW: Save All Contacts at once
-function saveAllContacts() {
-    if (contacts.length === 0) {
-        alert("No contacts to save!");
-        return;
-    }
-
-    // Optional: Add a small delay between downloads to ensure mobile browsers handle them well
-    contacts.forEach((contact, index) => {
-        setTimeout(() => {
-            saveContact(contact.name, contact.phone);
-        }, index * 300); // 300ms delay between each download
-    });
-
-    // Optional nice feedback
-    const btn = document.getElementById('save-all-btn');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = 'Saving...';
-    btn.disabled = true;
-
-    setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-    }, contacts.length * 300 + 500);
-}
-
 // Initial render
 renderContacts();
 
-// Attach Save All button event
 
-document.getElementById('save-all-btn').addEventListener('click', saveAllContacts);
 
